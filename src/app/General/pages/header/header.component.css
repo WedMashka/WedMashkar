@@ -1,0 +1,175 @@
+.nav{
+display: block;
+}
+
+
+/*---------меню бургер*/
+.icon {
+   display: none;
+}
+
+.menu__icon {
+   display: none;
+}
+
+.mobile__menu {
+   display: none;
+}
+
+
+.header__container {
+   padding: 0px 40px;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   background: rgba(1, 1, 1, 0.8);
+   box-shadow: 0px 0px 9px 0px rgba(255, 0, 238, 0.8), 0px 0px 20px 0px rgba(0, 0, 0, 0.9);
+}
+
+
+.logo {
+   margin: 0px 0px -7px 0px;
+   transition: all 1s ease;
+   cursor: pointer;
+   width: 200px;
+   height: 90px;
+}
+
+.box{
+   padding: 0px;
+   width: 100%;
+   display: flex;
+   justify-content: right;
+}
+.contacts{
+   position: absolute;
+   margin: 30px;
+}
+
+@media(max-width: 960px) {
+
+   .header__container {
+         padding: 0px 20px;
+      }
+   
+   
+      .logo {
+         margin: 0px 0px -3px 0px;
+         width: 150px;
+         height: 70px;
+      }
+      
+   
+}
+@media(max-width: 730px) {
+
+   .header__container {
+      justify-content: center;
+      padding: 0px 20px;
+   }
+
+
+   .logo {
+      margin: 5px;
+      width: 120px;
+      height: 50px;
+   }
+}
+
+@media(max-width: 580px) {
+
+   .header__container {
+      justify-content: space-between;
+      padding: 0px 20px;
+   }
+
+
+   .logo {
+      margin: 5px;
+      width: 120px;
+      height: 50px;
+   }
+
+   .nav{
+      display: none;
+   }
+
+      .mobile__menu {
+         display: none;
+      }
+
+      .mobile__menu.active {
+         position:fixed;
+         top: 0;
+         right: 0;
+         display: flex;
+         flex-direction: column;
+         align-items: baseline;
+         justify-content: center;
+         background: rgba(0, 0, 0, 0.85);
+         border-bottom-left-radius: 30px;
+         box-shadow: 0px 0px 3px 0px rgb(204, 0, 255);
+
+      }
+
+      a{
+         margin: 25px;
+         font-size: 25px;
+         color: rgb(251, 228, 255);
+      }
+
+   
+      .menu__icon {
+         display: block;
+         width: 40px;
+         height: 30px;
+         position: relative;
+      }
+
+            .sp1 {
+               position:absolute;
+               min-width: 40px;
+               min-height: 3px;
+               background: rgb(230, 71, 255);
+               top: 0px;
+               left: 0px;
+            }
+      
+            .sp2 {
+                position:absolute;
+               min-width: 40px;
+               min-height: 3px;
+               background: rgb(230, 71, 255);
+               top: 50%;
+               left: 0px;
+            }
+      
+            .sp3 {
+               position:absolute;
+               min-width: 40px;
+               min-height: 3px;
+               background: rgb(230, 71, 255);
+               bottom: 0px;
+               left: 0px;
+            }
+
+
+
+            .sp1.active {
+               top:45%;
+               transform: rotate(-45deg);
+            }
+      
+            .sp2.active{
+               display: none;
+            }
+      
+            .sp3.active{
+               bottom: 45%;
+               transform: rotate(45deg);
+            }
+}
+
+

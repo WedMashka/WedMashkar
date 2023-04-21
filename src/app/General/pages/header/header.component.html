@@ -1,0 +1,34 @@
+<div class="header__container" #myHeight>
+   <div class="logo__box">
+      <img [routerLink]="['/home']" routerLinkActive="router-link-active"  src="../../../../assets/img/Logo.png" alt="Logo" class="logo">
+   </div>
+   <nav class="nav">
+         <button [routerLink]="['about']" routerLinkActive="router-link-active"  class="nav__ul-li">Обо мне</button>
+         <button [routerLink]="['layout']" routerLinkActive="router-link-active"  class="nav__ul-li">Расклады</button>
+         <button (click)="contacts = !contacts" class="nav__ul-li">Контакты</button>
+         <button [routerLink]="['question']" routerLinkActive="router-link-active"  class="nav__ul-li">Вопросы-ответы</button>
+   </nav>
+      <nav class="mobile__menu" [ngClass]="{active: togleClassActive}">
+       <a href="" class="link__submenu" (click)="togleClassActive = !togleClassActive" [routerLink]="['about']">Обо мне</a>
+      <a href="" class="link__submenu" (click)="togleClassActive = !togleClassActive" [routerLink]="['layout']">Расклады</a>
+      <a href="" class="link__submenu" (click)="togleClassActive = !togleClassActive" [routerLink]="['contacts']">Контакты</a>
+      <a href="" class="link__submenu" (click)="togleClassActive = !togleClassActive" [routerLink]="['question']">Вопросы-ответы</a>
+      </nav>
+
+   <div class="menu__icon" [ngClass]="{active: togleClassActive}" (click)="togleClassActive = !togleClassActive">
+      <span class="sp1" [ngClass]="{active: togleClassActive}"></span>
+      <span class="sp2" [ngClass]="{active: togleClassActive}"></span>
+      <span class="sp3" [ngClass]="{active: togleClassActive}"></span> 
+   </div>
+
+</div>
+<div class="box">
+   <div class="contacts" *ngIf="contacts">
+      <app-contacts></app-contacts>
+   </div>
+</div>
+
+
+
+
+

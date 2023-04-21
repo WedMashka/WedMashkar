@@ -1,0 +1,103 @@
+.box{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image: url(../../../assets/img/bgBaner.png);
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   background-size: 1500px 1500px;
+}
+
+.baner__box {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: rgba(1, 1, 1, 0.9);
+}
+
+.baner__box-bottom {
+   cursor: pointer;
+   border-radius: 50%;
+   width: 450px;
+   height: 450px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-shadow: 0px 0px 30px 0px rgba(255, 0, 238, 0.8), 0px 0px 20px 0px rgba(0, 0, 0, 0.9), 0px 0px 30px 0px rgba(255, 0, 238, 0.8) inset;
+   flex-direction: column;
+}
+
+.baner__box-bottom:hover {
+   box-shadow: 0px 0px 60px 0px rgba(255, 0, 238, 0.8), 0px 0px 30px 0px rgba(0, 0, 0, 0.9), 0px 0px 60px 0px rgba(255, 0, 238, 0.8) inset;
+}
+
+.baner__box-bottom:active {
+   box-shadow: 0px 0px 600px 0px rgba(255, 0, 238, 0.8), 0px 0px 200px 0px rgba(0, 0, 0, 0.9), 0px 0px 100px 0px rgba(255, 0, 238, 0.8) inset;
+
+}
+
+.bottom__logo {
+   width: 200px;
+}
+
+.baner__text {
+   font-weight: 500;
+   line-height: 40px;
+   text-align: center;
+   font-size: 35px;
+   margin: 15px 40px 25px 40px;
+}
+
+.fire {
+   width: 90px;
+   height: 110px;
+   opacity: 0.8;
+   border-radius: 40%;
+   box-shadow: 0px 0px 50px 50px rgb(0, 0, 0);
+}
+
+@media (max-width:580px) {
+   .box {
+         background-size: 1000px 1000px;
+      }
+   
+      .baner__box-bottom {
+         width: 270px;
+         height: 270px;
+         box-shadow: 0px 0px 15px 0px rgba(255, 0, 238, 0.8), 0px 0px 10px 0px rgba(0, 0, 0, 0.9), 0px 0px 15px 0px rgba(255, 0, 238, 0.8) inset;
+         flex-direction: column;
+      }
+   
+      .baner__box-bottom:hover {
+         box-shadow: 0px 0px 30px 0px rgba(255, 0, 238, 0.8), 0px 0px 15px 0px rgba(0, 0, 0, 0.9), 0px 0px 30px 0px rgba(255, 0, 238, 0.8) inset;
+      }
+   
+      .baner__box-bottom:active {
+         box-shadow: 0px 0px 300px 0px rgba(255, 0, 238, 0.8), 0px 0px 100px 0px rgba(0, 0, 0, 0.9), 0px 0px 50px 0px rgba(255, 0, 238, 0.8) inset;
+   
+      }
+   
+      .bottom__logo {
+         width: 150px;
+      }
+   
+      .baner__text {
+         font-weight: 300;
+         line-height: 20px;
+         text-align: center;
+         font-size: 22px;
+         margin: 10px 20px 25px 20px;
+      }
+   
+      .fire {
+         width: 45px;
+         height: 55px;
+         opacity: 0.8;
+         border-radius: 30%;
+         box-shadow: 0px 0px 30px 30px rgb(0, 0, 0);
+      }
+}

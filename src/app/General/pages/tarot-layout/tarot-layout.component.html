@@ -1,0 +1,21 @@
+<div class="content" *ngIf="select">
+            <div class="card" *ngFor="let item of content">
+                  <div class="con">
+                        <div class="box" [routerLink]="[item.ro]" routerLinkActive="router-link-active" (click)="select = false">
+                              <h2 class="card__title" [routerLink]="[item.ro]" routerLinkActive="router-link-active" (click)="select = false">
+                                    {{item.type}}</h2>
+                              <p class="card__description">{{item.description}}</p>
+                        </div>
+                  </div>
+                 
+            </div>
+</div>
+
+<div class="content1" *ngIf="!select">
+      <div class="back">
+            <button (click)="select=true"> Hазад на Расклады</button>
+      </div>
+      <div class="content__box">
+            <router-outlet></router-outlet>
+      </div>
+</div>
