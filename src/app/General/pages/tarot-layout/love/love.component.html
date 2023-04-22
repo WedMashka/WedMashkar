@@ -1,6 +1,9 @@
 <div class="content">
    <div class="card" *ngFor="let item of content">
       <div class="box">
+         <div class="link">
+            <a href="https://wa.me/+79608674855? text=Здравствуйте%20меня%20интересует%20расклад%20{{item.type}}" target="_blank">Хочу этот расклад</a>
+         </div>
          <h2 class="card__title">{{item.type}}</h2>
          <p class="card__description">{{item.description}}</p>
          <ul *ngFor="let p of item.point">

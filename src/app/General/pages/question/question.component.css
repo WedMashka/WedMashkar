@@ -1,7 +1,7 @@
 
 
 .answer {
-   color: rgba(255, 255, 255, 1);
+   color: rgb(201, 189, 189);
    font-style: italic;
    font-weight: 500;
    font-size: 22px;
@@ -11,7 +11,7 @@
 }
 
 .quwestion {
-   color: rgb(247, 162, 255);
+   color: rgb(200, 100, 255);
    margin: 50px 0px 15px 0px;
    font-style: italic;
    font-weight: 500;

@@ -25,7 +25,7 @@ display: block;
    align-items: center;
    flex-wrap: wrap;
    background: rgba(1, 1, 1, 0.8);
-   box-shadow: 0px 0px 9px 0px rgba(255, 0, 238, 0.8), 0px 0px 20px 0px rgba(0, 0, 0, 0.9);
+   box-shadow: 0px 0px 9px 0px rgba(200, 100, 238, 0.8), 0px 0px 20px 0px rgba(0, 0, 0, 0.9);
 }
 
 
@@ -110,14 +110,14 @@ display: block;
          justify-content: center;
          background: rgba(0, 0, 0, 0.85);
          border-bottom-left-radius: 30px;
-         box-shadow: 0px 0px 3px 0px rgb(204, 0, 255);
+         box-shadow: 0px 0px 3px 0px rgb(200, 100, 255);
 
       }
 
       a{
          margin: 25px;
          font-size: 25px;
-         color: rgb(251, 228, 255);
+         color: rgb(228, 206, 232);
       }
 
    
@@ -132,7 +132,7 @@ display: block;
                position:absolute;
                min-width: 40px;
                min-height: 3px;
-               background: rgb(230, 71, 255);
+               background: rgb(200, 100, 255);
                top: 0px;
                left: 0px;
             }
@@ -141,7 +141,7 @@ display: block;
                 position:absolute;
                min-width: 40px;
                min-height: 3px;
-               background: rgb(230, 71, 255);
+               background: rgb(200, 100, 255);
                top: 50%;
                left: 0px;
             }
@@ -150,7 +150,7 @@ display: block;
                position:absolute;
                min-width: 40px;
                min-height: 3px;
-               background: rgb(230, 71, 255);
+               background: rgb(200, 100, 255);
                bottom: 0px;
                left: 0px;
             }
