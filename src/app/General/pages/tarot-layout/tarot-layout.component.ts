@@ -19,8 +19,18 @@ export class TarotLayoutComponent {
     { type: 'Ситуативные расклады', description: 'Помогает разобраться в сложном или не стандартном вопросе.  Можно расмотреть проблему с разных сторон, выявить сильные и слабые стороны, найти конструктивное решение. В данном случае рассматриваться могут абсолютно любые вопросы.', ro:'situation' },
   ]
   
+  btn1: boolean = false;
+
   constructor() {
+    setInterval(() => {
+      if (this.btn1) {
+        return this.btn1 = false;
+      } else {
+        return this.btn1 = true;
+      }
+    }, 1000);
   }
+
 
 
 }

@@ -3,7 +3,8 @@
                   <div class="con">
                         <div class="box">
                               <div class="link">
-                                          <a href="https://wa.me/+79608674855? text=Здравствуйте%20меня%20интересуют%20{{item.type}}" target="_blank">Хочу этот расклад</a>
+                                          <a href="https://api.whatsapp.com/send?phone=79608674855&text=Здравствуйте%20меня%20интересуют%20{{item.type}}" target="_blank" [ngStyle]="{overflow: 'hidden',fontSize: btn1 ? '100%':  '91%', boxShadow: btn1 ? '0px 0px 25px 0px rgb(200, 100, 255)':  '0px 0px 7px 0px rgb(200, 100, 255)', transition: 'all 1s ease', background: btn1 ? 'rgba(41, 28, 49, 1) ':'rgba(41, 28, 49, 0.311)'}">Хочу этот расклад </a>
+   
                               </div>
                               <h2 class="card__title" [routerLink]="[item.ro]" routerLinkActive="router-link-active" (click)="select = false">
                                     {{item.type}}</h2>

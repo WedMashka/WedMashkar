@@ -62,18 +62,18 @@
 
 @media (max-width:580px) {
    .box {
-         background-size: 1000px 1000px;
+         background-size: 900px 900px;
       }
    
       .baner__box-bottom {
          width: 270px;
          height: 270px;
-         box-shadow: 0px 0px 15px 0px rgba(200, 100, 255, 0.8), 0px 0px 10px 0px rgba(0, 0, 0, 0.9), 0px 0px 15px 0px rgba(200, 100, 238, 0.8) inset;
+         box-shadow: 0px 0px 25px 0px rgba(200, 100, 255, 0.8), 0px 0px 15px 0px rgba(0, 0, 0, 0.9), 0px 0px 20px 0px rgba(200, 100, 238, 0.8) inset;
          flex-direction: column;
       }
    
       .baner__box-bottom:hover {
-         box-shadow: 0px 0px 30px 0px rgba(200, 100, 238, 0.8), 0px 0px 15px 0px rgba(0, 0, 0, 0.9), 0px 0px 30px 0px rgba(200, 100, 238, 0.8) inset;
+         box-shadow: 0px 0px 40px 0px rgba(200, 100, 238, 0.8), 0px 0px 15px 0px rgba(0, 0, 0, 0.9), 0px 0px 40px 0px rgba(200, 100, 238, 0.8) inset;
       }
    
       .baner__box-bottom:active {

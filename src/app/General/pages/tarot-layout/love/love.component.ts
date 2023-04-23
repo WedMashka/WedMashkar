@@ -29,5 +29,17 @@ export class LoveComponent {
 'Что вас может разъединить',
 'Перспективы в мат плане',
 'Как можно завоевать парнера.'] }
-]
+  ]
+  
+  btn1: boolean = false;
+
+  constructor() {
+    setInterval(() => {
+      if (this.btn1) {
+        return this.btn1 = false;
+      } else {
+        return this.btn1 = true;
+      }
+    }, 1000);
+  }
 }

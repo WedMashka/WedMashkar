@@ -46,4 +46,15 @@ export class MoneyComponent {
 '9 - где искать предназначение'] },
   ]
 
+  btn1: boolean = false;
+
+  constructor() {
+    setInterval(() => {
+      if (this.btn1) {
+        return this.btn1 = false;
+      } else {
+        return this.btn1 = true;
+      }
+    }, 1000);
+  }
 }

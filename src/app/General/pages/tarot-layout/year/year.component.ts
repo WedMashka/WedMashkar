@@ -21,4 +21,16 @@ export class YearComponent {
 ' Совет карт Таро по всем сферам',
 'С чем входите в следующий год.'] }
   ];
+
+  btn1: boolean = false;
+
+  constructor() {
+    setInterval(() => {
+      if (this.btn1) {
+        return this.btn1 = false;
+      } else {
+        return this.btn1 = true;
+      }
+    }, 1000);
+  }
 }
